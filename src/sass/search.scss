@@ -1,0 +1,140 @@
+.search-min {
+    background-color: #fff;
+    max-width: 670px;
+    height: max-content;
+    margin-top: 50px;
+    padding: 25px;
+    -webkit-box-shadow: -2px 4px 53px -7px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: -2px 4px 53px -7px rgba(0, 0, 0, 0.56);
+    box-shadow: -2px 4px 53px -7px rgba(0, 0, 0, 0.56);
+    flex-wrap: wrap;
+    display: flex;
+
+    &__loading {
+        background-color: white
+    }
+
+    &__txt {
+        font-size: 13px;
+        font-weight: 600;
+        color: #333;
+        text-align: left;
+        margin-bottom: 3px;
+
+        &--bold {
+            font-weight: 700;
+        }
+
+        &--condition {
+            font-size: 20px;
+            font-size: 20px;
+            margin-right: 50px;
+            font-weight: 300;
+            cursor: pointer;
+            @media (max-width: 387px) {
+                margin-right: 5%; 
+            }
+
+        }
+
+        &--condition-last {
+            margin-right: 0px;
+        }
+
+        &--activeCondition {
+            color: #00bffd;
+            font-weight: bold;
+        }
+
+    }
+
+
+    &__select {
+        width: 160px;
+
+        @media (max-width: 374px) {
+            width: 100%;
+        }
+    }
+
+    &__row {
+        display: flex;
+        margin-right: 5px;
+        flex-wrap: wrap;
+
+        &--fuel {
+            margin-top: 11px;
+            line-height: 45px;
+        }
+
+    }
+
+    &__fieldset {
+        margin: 0;
+        border: none;
+        padding: 0;
+    }
+
+
+    &__button {
+        &--box {
+            width: 100%;
+        }
+
+        border-radius: 1px;
+        transition: background-color 0.1s ease-in,
+        color 0.1s ease-in;
+        padding: 5px 12px;
+        background: #f2f3f6;
+        border: 1px solid #d9dee8;
+        box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.36);
+        color: #474747;
+        cursor: pointer;
+        margin-right: 15px;
+
+        &--search {
+            background: #c82814;
+            box-shadow: 0 1px 2px #af4d41;
+            color: #fff;
+            font-size: 18px;
+            height: 41px;
+            line-height: 41px;
+            padding: 0 25px;
+            width: max-content;
+            font-weight: 600;
+            margin: 0 auto;
+            margin-top: 30px;
+
+            &:hover,
+            :focus {
+                background-color: #9c1907;
+                color: #fff;
+            }
+        }
+
+        &--active {
+            background-color: #00bffd;
+            border: none;
+            color: #fff;
+        }
+    }
+
+    &__box {
+        margin: 0 auto;
+        display: inline;
+        margin-bottom: 30px;
+
+        &--row {
+            width: 100%;
+        }
+
+        &--fuel {
+            margin: 0;
+
+        }
+
+        @media (max-width: 374px) {
+            width: 100%;
+        }
+    }
+}
